@@ -17,7 +17,7 @@ public class Damas {
         System.out.println("Mostrando el tablero antes de iniciar");
         System.out.println(game.showTablero());
         
-        Jugador j1 = new Jugador('N');
+        Jugador j1 = new Jugador('N'); 
         Jugador j2 = new Jugador('B');
         game.inicio(j1, j2);
         

@@ -17,10 +17,14 @@ public class Juego {
 
         //aqui se definen en blanco todas las casillas
         this.tablero = new char[ancho][largo];
-
+        boolean white=true;
         for (int x = 0; x < ancho; x++) {
             for (int y = 0; y < largo; y++) {
-                this.tablero[x][y] = '0';
+                if(white){
+                this.tablero[x][y] = 'w';    //white casilla blanca
+                }else{
+                this.tablero[x][y] = 'b';    //black casilla negra
+                }
 
             }
 
